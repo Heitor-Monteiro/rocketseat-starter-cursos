@@ -1,50 +1,141 @@
 "use strict";
 
+// Object Short Syntax **************************************
+var nome = 'Fulano Souza';
+var idade = 44;
+var usuario = {
+  nome: nome,
+  idade: idade,
+  empresa: 'Rocketseat'
+};
+console.log(usuario); // Template LiteralsConceitos ****************************************8
+
+/*
+const nome = "Beltrano Monteiro Silva";
+const idade = 29;
+// console.log('1: Meu nome é ' + nome + ' e tenho ' + idade + ' anos.');
+console.log(`2: Meu nome é ${nome} e tenho ${idade} anos.`);
+*/
+// Operadores rest/spread ***********************************************
+// REST
+
+/* Exemplo 1------------------------------------------
+const usuario = {
+    nome: 'Sicrano Monteiro',
+    idade: 22,
+    empresa: 'FicticiaLTDA'
+};
+
+const { nome, ...resto } = usuario;
+console.log(nome);
+console.log(resto);
+*/
+// Exemplo 2 ------------------------------------------
+
+/**
+const arr = [1, 2, 3, 4];
+const [a, b, ...c] = arr;
+console.log(a);
+console.log(b);
+console.log(c);
+*/
+// Exemplo 3 ------------------------------------------
+
+/*
+function soma(...params) {
+    return params.reduce((total, next) => total + next);
+}
+console.log(soma(1, 3, 4));
+*/
+// SPREAD
+// Exemplo 4 ------------------------------------------
+
+/*
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const arr3 = [...arr1, ...arr2];
+console.log(arr3);
+*/
+// Exemplo 5 ------------------------------------------
+
+/*
+const usuario1 = {
+    nome: 'Fulano Reis',
+    idade: 33,
+    empresa: 'Teste Empresa',
+};
+
+const usuario2 = { ...usuario1, nome: 'Beltrano Moraes' };
+console.log(usuario2);
+*/
+
+/*
+// Desestruturação ***************************************
+const usuario = {
+    nome: 'Beltrano Silva',
+    idade: 30,
+    endereco: {
+        cidade: 'Belém',
+        estado: 'PA',
+    },
+};
+
+// Exemplo 1 -----------------------------------------
+//const { nome, idade, endereco: { cidade } } = usuario;
+//console.log(nome, idade, cidade);
+
+// Exemplo 2 -----------------------------------------
+// function mostraNome({ nome, idade }) {
+//     console.log(nome, idade);
+// }
+// mostraNome(usuario);
+*/
+
+/*
+// Valores padrão *******************************************
+function soma(a = 3, b = 6) {
+    return a + b;
+}
+console.log(soma(1));
+console.log(soma());
+*/
+
+/*
 // Arrow Functions **************************************
-var arr = [1, 3, 4, 5, 6]; // Obs.: A arrow functions dispensa a declaração function.
+const arr = [1, 3, 4, 5, 6];
+
+// Obs.: A arrow functions dispensa a declaração function.
 // Obs.: Caso a arrow functions receba apenas um único parâmetro,
 // não é necessário utilizar parênteses.
 // Exemplo 1 -----------------------------------
-
-var newArr = arr.map(function (item) {
-  return item * 2;
+const newArr = arr.map(item => {
+    return item * 2;
 });
-console.log(newArr); // Exemplo 2 -----------------------------------
+console.log(newArr);
 
-var newArr2 = arr.map(function (item) {
-  return item + 2;
-});
-console.log(newArr2); // Exemplo 3 -----------------------------------
+// Exemplo 2 -----------------------------------
+const newArr2 = arr.map(item => item + 2);
+console.log(newArr2);
 
-var teste = function teste() {
-  return 'teste';
-};
+// Exemplo 3 -----------------------------------
+const teste = () => {
+    return 'teste';
+}
+console.log(teste());
 
-console.log(teste()); // Exemplo 4 -----------------------------------
-
-var teste2 = function teste2() {
-  return [1, 2, 3];
-};
-
-var teste3 = function teste3() {
-  return 'teste';
-};
-
-var teste4 = function teste4() {
-  return 3;
-};
-
+// Exemplo 4 -----------------------------------
+const teste2 = () => [1, 2, 3];
+const teste3 = () => 'teste';
+const teste4 = () => 3;
 console.log(teste2());
 console.log(teste3());
-console.log(teste4()); // Obs.: para retornar objeto.
+console.log(teste4());
 
-var teste5 = function teste5() {
-  return {
-    nome: 'Beltrano'
-  };
-};
-
+// Obs.: para retornar objeto.
+const teste5 = () => ({ nome: 'Beltrano' });
 console.log(teste5());
+*/
+
 /**
 // Operações com Array *****************************************
 
