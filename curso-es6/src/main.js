@@ -1,24 +1,54 @@
-"use strict";
+//import importExport from './2-webpackServer/importExport/index';
+//importExport();
+//-------------------------------------------------------------------
+import ClasseUsuario, { idade as IdadeUsuario } from '../2-webpackServer/functions';
+ClasseUsuario.info();
+alert(IdadeUsuario);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Object Short Syntax **************************************
-var nome = 'Fulano Souza';
-var idade = 44;
-var usuario = {
-  nome: nome,
-  idade: idade,
-  empresa: 'Rocketseat'
+/*
+const nome = 'Fulano Souza';
+const idade = 44;
+const usuario = {
+    nome,
+    idade,
+    empresa: 'Rocketseat',
 };
-console.log(usuario); // Template LiteralsConceitos ****************************************8
+console.log(usuario);
+*/
 
+
+// Template LiteralsConceitos ****************************************8
 /*
 const nome = "Beltrano Monteiro Silva";
 const idade = 29;
 // console.log('1: Meu nome é ' + nome + ' e tenho ' + idade + ' anos.');
 console.log(`2: Meu nome é ${nome} e tenho ${idade} anos.`);
 */
+
+
 // Operadores rest/spread ***********************************************
 // REST
-
 /* Exemplo 1------------------------------------------
 const usuario = {
     nome: 'Sicrano Monteiro',
@@ -30,8 +60,8 @@ const { nome, ...resto } = usuario;
 console.log(nome);
 console.log(resto);
 */
-// Exemplo 2 ------------------------------------------
 
+// Exemplo 2 ------------------------------------------
 /**
 const arr = [1, 2, 3, 4];
 const [a, b, ...c] = arr;
@@ -39,25 +69,25 @@ console.log(a);
 console.log(b);
 console.log(c);
 */
-// Exemplo 3 ------------------------------------------
 
+// Exemplo 3 ------------------------------------------
 /*
 function soma(...params) {
     return params.reduce((total, next) => total + next);
 }
 console.log(soma(1, 3, 4));
 */
+
 // SPREAD
 // Exemplo 4 ------------------------------------------
-
 /*
 const arr1 = [1, 2, 3];
 const arr2 = [4, 5, 6];
 const arr3 = [...arr1, ...arr2];
 console.log(arr3);
 */
-// Exemplo 5 ------------------------------------------
 
+// Exemplo 5 ------------------------------------------
 /*
 const usuario1 = {
     nome: 'Fulano Reis',
@@ -68,6 +98,7 @@ const usuario1 = {
 const usuario2 = { ...usuario1, nome: 'Beltrano Moraes' };
 console.log(usuario2);
 */
+
 
 /*
 // Desestruturação ***************************************
@@ -91,6 +122,7 @@ const usuario = {
 // mostraNome(usuario);
 */
 
+
 /*
 // Valores padrão *******************************************
 function soma(a = 3, b = 6) {
@@ -99,6 +131,7 @@ function soma(a = 3, b = 6) {
 console.log(soma(1));
 console.log(soma());
 */
+
 
 /*
 // Arrow Functions **************************************
@@ -135,6 +168,7 @@ console.log(teste4());
 const teste5 = () => ({ nome: 'Beltrano' });
 console.log(teste5());
 */
+
 
 /**
 // Operações com Array *****************************************
@@ -175,6 +209,7 @@ const find = arr.find(function (item) {
 console.log(find);
 */
 
+
 /** Exemplo de const e let ************************************************
  *
  * Exemplo 1:
@@ -201,6 +236,7 @@ function teste(x) {
 }
 teste(10);
 */
+
 
 /** Exemplo de classes no JavaScript ******************************************
  * Exemplo 1----------------------------
