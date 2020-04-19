@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de JavaScript</title>
+</head>
+
+<body>
+    <div id="app">
+        <button id="botao">Adicionar box</button>
+    </div>
+
+    <script>
+        var containerElement = document.querySelector('#app');
+        var btnBotao = document.querySelector('#botao');
+
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function mudarCor() {
+            this.style.backgroundColor = getRandomColor();
+        }
+
+        function criarBox(color, funcao) {
+            var boxElement = document.createElement('div');
+            boxElement.style.width = 100;
+            boxElement.style.height = 100;
+            boxElement.style.margin = 10, 10, 10, 10;
+            boxElement.style.backgroundColor = color;
+            boxElement.onmouseover = funcao;
+            return boxElement;
+        }
+
+        btnBotao.onclick = function () {
+            containerElement.appendChild(criarBox(getRandomColor(), mudarCor));
+        }
+
+
+    </script>
+</body>
+
+</html>

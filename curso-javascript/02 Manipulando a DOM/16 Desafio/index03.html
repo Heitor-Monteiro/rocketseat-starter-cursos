@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de JavaScript</title>
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+        </ul>
+    </div>
+
+    <script>
+        var lista = document.querySelector('div#app ul');
+
+        function creatItem(text) {
+            var item = document.createElement('li');
+            item.appendChild(document.createTextNode(text));
+            item.style.marginBottom = 5;
+            lista.appendChild(item);
+        }
+
+        creatItem('Beltrano');
+        creatItem('Ciclano');
+        creatItem('Fulano');
+
+    </script>
+</body>
+
+</html>

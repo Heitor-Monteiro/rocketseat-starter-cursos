@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de JavaScript</title>
+</head>
+
+<body>
+    <div id="app">
+        <input id="nome" />
+        <button id="botao">Remover input</button>
+    </div>
+
+    <script>
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', 'https://github.com/Heitor-Monteiro?tab=repositories');
+
+        var textElement = document.createTextNode('GitHub');
+        linkElement.appendChild(textElement);
+
+        var containerElement = document.querySelector('#app');
+        containerElement.appendChild(linkElement);
+
+        //---------------------------------------------------------------
+
+        var btnElement = document.querySelector('#botao');
+        var inputElement = document.querySelector('#nome');
+
+        btnElement.onclick = function () {
+            containerElement.removeChild(inputElement);
+        }
+
+
+    </script>
+</body>
+
+</html>

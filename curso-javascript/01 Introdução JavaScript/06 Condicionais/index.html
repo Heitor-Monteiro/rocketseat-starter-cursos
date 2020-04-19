@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>Curso de JavaScript</title>
+</head>
+
+<body>
+
+    <script>
+        function retornaSexo(sexo) {
+            // M, F
+            // Masculino, Feminino
+
+            /*
+            // Utilizar "===" verifica o conteudo da informação e seu tipo. 
+            if (sexo === 'M') {
+                return 'Masculino';
+            } else if (sexo === 'F') {
+                return 'Feminino';
+            } else {
+                return 'Outro';
+            }
+            */
+            switch (sexo) {
+                case '0': return 'Masculino';
+                case '1': return 'Feminino';
+                default: return 'Outro';
+            }
+        }
+
+        var resultado = retornaSexo('0');
+        console.log(resultado);
+
+
+        /**
+        // utilizar "==" compara somente o conteudo, ignorando o tipo
+        function teste(valor) {
+            if (valor == 1) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        console.log('Exemplo com tipo texto: ', teste('1'));
+        console.log('Exemplo com tipo numero: ', teste(1));
+        console.log('Exemplo com numero 2: ', teste(2));
+
+        // utilizar "===" compara o conteudo e o tipo
+        function teste2(valor) {
+            if (valor === 1) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        console.log('Exemplo com tipo texto: ', teste2('1'));
+        console.log('Exemplo com tipo numero: ', teste2(1));
+        **/
+
+    </script>
+</body>
+
+</html>

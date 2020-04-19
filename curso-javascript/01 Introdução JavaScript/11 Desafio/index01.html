@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio 11</title>
+</head>
+
+<body>
+    <script>
+        var endereco = {
+            rua: 'AV João fictício',
+            numero: 1234,
+            bairro: 'Centro',
+            cidade: 'Castanhal',
+            uf: 'PA'
+        }
+
+        function exibirEndereco(item) {
+            return 'O usuário mora em ' 
+            + item.cidade + ' / ' + item.uf 
+            + ' no bairro ' + item.bairro + ', na rua "' 
+            + item.rua + '" com nº ' + item.numero + '.';
+        }
+
+        console.log(exibirEndereco(endereco));
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de JavaScript</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" name="nome" id="nome" class="teste" />
+        <input type="text" name="nome2" id="nome2" class="teste" />
+        <button class="botao">Adicionar</button>
+    </div>
+
+    <div id="app2">
+        <input type="text" name="teste" />
+        <input type="text" name="teste3" />
+        <input type="text" name="teste4" />
+        <input type="text" name="teste5" />
+    </div>
+
+    <script>
+        var inputElementID = document.getElementById('nome');
+
+        //Vai armazenar um vetor de elementos da tag input, caso não seja informado o index
+        var inputElementTAG = document.getElementsByTagName('input')[0];
+
+        var inputElementCLASS = document.getElementsByClassName('teste')[1];
+
+        console.log(inputElementID);
+        console.log(inputElementTAG);
+        console.log(inputElementCLASS);
+        //---------------------------------------------------------------------------------
+
+        var inputElementQuerySelect = document.querySelector('body div#app2 input');
+        var inputElementQuerySelect2 = document.querySelector('body div#app2 input[name=teste3]');
+        var inputElementQuerySelect3 = document.querySelectorAll('body div#app2 input');
+
+        var pegarTexto = document.querySelector('div#app input#nome');
+        var btnElement = document.querySelector('button.botao');
+
+        console.log(inputElementQuerySelect);
+        console.log(inputElementQuerySelect2);
+        console.log(inputElementQuerySelect3);
+
+        btnElement.onclick = function () {
+            var text = pegarTexto.value;
+            alert(text);
+        }
+    </script>
+</body>
+
+</html>

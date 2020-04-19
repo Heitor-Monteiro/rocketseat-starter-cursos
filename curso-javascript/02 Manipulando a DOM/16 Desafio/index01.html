@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de JavaScript</title>
+</head>
+
+<body>
+    <div id="app">
+        <button id="botao">Adicionar box</button>
+    </div>
+
+    <script>
+        var containerElement = document.querySelector('#app');
+
+        function criarBox() {
+            var boxElement = document.createElement('div');
+            boxElement.style.width = 100;
+            boxElement.style.height = 100;
+            boxElement.style.margin = 10, 10, 10, 10;
+            boxElement.style.backgroundColor = 'f00';
+            return boxElement;
+        }
+
+        var btnBotao = document.querySelector('#botao');
+
+        btnBotao.onclick = function () {
+            containerElement.appendChild(criarBox());
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio 11</title>
+</head>
+
+<body>
+    <script>
+        //O Diego possui as habilidades: Javascript, ReactJS, Redux
+        function exibirArray(vetor) {
+            var letra;
+            for (const object of vetor) {
+                if (object.sexo === 'M') {
+                    letra = 'O ';
+                } else {
+                    letra = 'A ';
+                }
+                console.log(letra + object.nome + ' possui as habilidades: ' + object.habilidades.join());
+            }
+        }
+
+        var usuarios = [
+            {
+                nome: 'Heitor',
+                habilidades: ['Java', 'JSF', 'Primefaces', 'Hibernate'],
+                sexo: 'M'
+            },
+            {
+                nome: 'Beltrana',
+                habilidades: ['Javascript', 'ReactJS', 'Redux'],
+                sexo: 'F'
+            },
+        ];
+
+        exibirArray(usuarios);
+    </script>
+</body>
+
+</html>
