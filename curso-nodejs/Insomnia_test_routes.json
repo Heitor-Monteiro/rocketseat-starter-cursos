@@ -1,0 +1,62 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2020-04-25T03:22:10.418Z",
+  "__export_source": "insomnia.desktop.app:v7.1.1",
+  "resources": [
+    {
+      "_id": "req_641c4526d1a3493884833a84ee26f8d2",
+      "authentication": {},
+      "body": {},
+      "created": 1587784613857,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1587784613857,
+      "method": "GET",
+      "modified": 1587784817520,
+      "name": "index",
+      "parameters": [],
+      "parentId": "wrk_a5a94e1be93744b38ce29145416fb1a6",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/products",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_a5a94e1be93744b38ce29145416fb1a6",
+      "created": 1587784555328,
+      "description": "",
+      "modified": 1587784555328,
+      "name": "NodeJS",
+      "parentId": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "env_fa2d3a9cf2e60decb72efafc4778bdbb64a230e9",
+      "color": null,
+      "created": 1587784555431,
+      "data": { "base_url": "http://localhost:3001/api" },
+      "dataPropertyOrder": { "&": ["base_url"] },
+      "isPrivate": false,
+      "metaSortKey": 1587784555431,
+      "modified": 1587784788118,
+      "name": "Base Environment",
+      "parentId": "wrk_a5a94e1be93744b38ce29145416fb1a6",
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_fa2d3a9cf2e60decb72efafc4778bdbb64a230e9",
+      "cookies": [],
+      "created": 1587784555435,
+      "modified": 1587784555435,
+      "name": "Default Jar",
+      "parentId": "wrk_a5a94e1be93744b38ce29145416fb1a6",
+      "_type": "cookie_jar"
+    }
+  ]
+}
