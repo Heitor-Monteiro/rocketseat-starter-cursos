@@ -1,7 +1,7 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2020-04-25T03:22:10.418Z",
+  "__export_date": "2020-04-27T02:34:44.376Z",
   "__export_source": "insomnia.desktop.app:v7.1.1",
   "resources": [
     {
@@ -35,6 +35,38 @@
       "name": "NodeJS",
       "parentId": null,
       "_type": "workspace"
+    },
+    {
+      "_id": "req_3b1437466a814b5a9a8edc7b86a7a01f",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"ReactJS\",\n\t\"description\": \"Biblioteca para criar aplicações interativas com Javascript\",\n\t\"url\": \"https://github.com/facebook/react-native\"\n}"
+      },
+      "created": 1587953512493,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_729a426505714e62bd37068a21ae08ab",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1586523398312,
+      "method": "POST",
+      "modified": 1587953711301,
+      "name": "Create",
+      "parameters": [],
+      "parentId": "wrk_a5a94e1be93744b38ce29145416fb1a6",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/products",
+      "_type": "request"
     },
     {
       "_id": "env_fa2d3a9cf2e60decb72efafc4778bdbb64a230e9",
