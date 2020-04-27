@@ -1,7 +1,7 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2020-04-27T03:14:02.809Z",
+  "__export_date": "2020-04-27T17:16:03.067Z",
   "__export_source": "insomnia.desktop.app:v7.1.1",
   "resources": [
     {
@@ -14,7 +14,7 @@
       "isPrivate": false,
       "metaSortKey": -1587784613857,
       "method": "GET",
-      "modified": 1587956008183,
+      "modified": 1588006310256,
       "name": "Index",
       "parameters": [],
       "parentId": "wrk_a5a94e1be93744b38ce29145416fb1a6",
@@ -24,7 +24,7 @@
       "settingRebuildPath": true,
       "settingSendCookies": true,
       "settingStoreCookies": true,
-      "url": "{{ base_url  }}/products",
+      "url": "{{ base_url  }}/products?page=3",
       "_type": "request"
     },
     {
