@@ -1,7 +1,7 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2020-04-27T02:34:44.376Z",
+  "__export_date": "2020-04-27T03:14:02.809Z",
   "__export_source": "insomnia.desktop.app:v7.1.1",
   "resources": [
     {
@@ -14,8 +14,8 @@
       "isPrivate": false,
       "metaSortKey": -1587784613857,
       "method": "GET",
-      "modified": 1587784817520,
-      "name": "index",
+      "modified": 1587956008183,
+      "name": "Index",
       "parameters": [],
       "parentId": "wrk_a5a94e1be93744b38ce29145416fb1a6",
       "settingDisableRenderRequestBody": false,
@@ -37,11 +37,34 @@
       "_type": "workspace"
     },
     {
+      "_id": "req_7a7721eacfae42fd91fa86073b5958b1",
+      "authentication": {},
+      "body": {},
+      "created": 1587956017877,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1587154006084.5,
+      "method": "GET",
+      "modified": 1587956056473,
+      "name": "Show",
+      "parameters": [],
+      "parentId": "wrk_a5a94e1be93744b38ce29145416fb1a6",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/products/5ea642439eb71d253c6e3e66",
+      "_type": "request"
+    },
+    {
       "_id": "req_3b1437466a814b5a9a8edc7b86a7a01f",
       "authentication": {},
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"title\": \"ReactJS\",\n\t\"description\": \"Biblioteca para criar aplicações interativas com Javascript\",\n\t\"url\": \"https://github.com/facebook/react-native\"\n}"
+        "text": "{\n\t\"title\": \"NodoJS\",\n\t\"description\": \"interpretador de JavaScript assíncrono com código aberto orientado a eventos, criado por Ryan Dahl em 2009, focado em migrar a programação do Javascript do cliente para os servidores\",\n\t\"url\": \"https://nodejs.org/en/\"\n}"
       },
       "created": 1587953512493,
       "description": "",
@@ -55,7 +78,7 @@
       "isPrivate": false,
       "metaSortKey": -1586523398312,
       "method": "POST",
-      "modified": 1587953711301,
+      "modified": 1587956795285,
       "name": "Create",
       "parameters": [],
       "parentId": "wrk_a5a94e1be93744b38ce29145416fb1a6",
@@ -66,6 +89,61 @@
       "settingSendCookies": true,
       "settingStoreCookies": true,
       "url": "{{ base_url  }}/products",
+      "_type": "request"
+    },
+    {
+      "_id": "req_936f55d960ce4b43a5ef0bb04c973d9d",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"ReactJS @@@@\"\n}"
+      },
+      "created": 1587956398382,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_729a426505714e62bd37068a21ae08ab",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1585892790539.5,
+      "method": "PUT",
+      "modified": 1587956677543,
+      "name": "Update",
+      "parameters": [],
+      "parentId": "wrk_a5a94e1be93744b38ce29145416fb1a6",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/products/5ea642439eb71d253c6e3e66",
+      "_type": "request"
+    },
+    {
+      "_id": "req_ea4e09c49a9b46c2b00a6e96040e91c8",
+      "authentication": {},
+      "body": {},
+      "created": 1587956985909,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1585577486653.25,
+      "method": "DELETE",
+      "modified": 1587956999175,
+      "name": "Delete",
+      "parameters": [],
+      "parentId": "wrk_a5a94e1be93744b38ce29145416fb1a6",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/products/5ea642439eb71d253c6e3e66",
       "_type": "request"
     },
     {
